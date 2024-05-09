@@ -1,7 +1,11 @@
-import React from "react";
+import Newsletter from "./components/Newsletter";
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <main className="container h-screen mx-auto md:flex md:justify-center md:items-center ">
+      <Newsletter />
+    </main>
+  );
 };
 
 export default App;
