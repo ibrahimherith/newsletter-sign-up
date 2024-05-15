@@ -4,12 +4,12 @@ import desktop from "../assets/images/illustration-sign-up-desktop.svg";
 
 const Newsletter = () => {
   return (
-    <div>
-      <header>
-        <img src={mobile} alt="" />
-        <img src={desktop} alt="" className="hidden md:visible" />
+    <div className=" md:w-3/5 md:h-fit md:p-4 md:rounded-3xl md:flex md:flex-row-reverse md:items-center md:bg-White">
+      <header className="">
+        <img src={mobile} alt="" className="w-full md:hidden" />
+        <img src={desktop} alt="" className="hidden md:flex" />
       </header>
-      <main className="p-6">
+      <main className="p-6 md:p-8">
         <h1 className="text-4xl font-bold">Stay Updated!</h1>
         <p className="mt-4">
           Join 60,000+ product managers receiving monthly updates on:
@@ -27,13 +27,26 @@ const Newsletter = () => {
           <p>And much more!</p>
         </div>
 
-        <form>
-          <div className="input-control">
-            <label htmlFor="email">Email address</label>
-            <input type="email" name="email" id="email" />
+        <form className="mt-10 md:mt-8">
+          <div className="input-control flex flex-col">
+            <label htmlFor="email" className="text-sm">
+              Email address
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@company.com"
+              className="mt-2 p-4 rounded-lg border border-black md:p-3"
+            />
           </div>
 
-          <button type="submit">Subscribe to monthly newsletter</button>
+          <button
+            type="submit"
+            className="mt-4 p-4 w-full rounded-lg bg-black text-white md:p-3"
+          >
+            Subscribe to monthly newsletter
+          </button>
         </form>
       </main>
     </div>

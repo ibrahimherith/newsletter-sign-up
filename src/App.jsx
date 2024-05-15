@@ -1,10 +1,15 @@
-import Newsletter from "./components/Newsletter";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Success from "./pages/Success";
 
 const App = () => {
   return (
-    <main className="container h-screen mx-auto md:flex md:justify-center md:items-center ">
-      <Newsletter />
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" Component={Home} />
+        <Route path="/success" Component={Success} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
