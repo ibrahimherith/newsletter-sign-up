@@ -27,7 +27,7 @@ const Home = () => {
 
   return (
     <main className=" w-screen h-screen mx-auto  md:flex md:justify-center md:items-center md:bg-DarkSlateGrey">
-      <div className="animate__animated animate__fadeInLeft md:w-3/5 md:h-fit md:p-4 md:rounded-3xl md:flex md:flex-row-reverse md:items-center md:bg-White">
+      <div className="animate__animated animate__fadeInLeft md:w-4/5 lg:w-3/5 md:h-fit md:p-4 md:rounded-3xl md:flex md:flex-row-reverse md:items-center md:bg-White">
         {/* card image */}
         <div className="">
           <img src={mobile} alt="" className="w-full md:hidden" />

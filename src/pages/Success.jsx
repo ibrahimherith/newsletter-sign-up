@@ -10,7 +10,7 @@ const Success = () => {
 
   return (
     <main className=" w-screen h-screen md:flex md:justify-center md:items-center md:bg-DarkSlateGrey">
-      <div className="animate__animated animate__fadeInRight p-8 h-full flex flex-col justify-between md:w-1/4 md:h-fit md:p-8 md:rounded-3xl md:flex md:flex-col md:bg-White">
+      <div className="animate__animated animate__fadeInRight p-8 h-full flex flex-col justify-between md:w-2/4 md:h-fit md:p-8 md:rounded-3xl md:flex md:flex-col md:bg-White lg:w-2/5">
         <div className="mt-20 md:mt-0">
           <div>
             <img src={iconSuccess} alt="" />
