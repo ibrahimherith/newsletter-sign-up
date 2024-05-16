@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import "animate.css";
 import iconSuccess from "../assets/images/icon-success.svg";
 
 const Success = () => {
@@ -9,7 +10,7 @@ const Success = () => {
 
   return (
     <main className=" w-screen h-screen md:flex md:justify-center md:items-center md:bg-DarkSlateGrey">
-      <div className="p-8 h-full flex flex-col justify-between md:w-1/4 md:h-fit md:p-8 md:rounded-3xl md:flex md:flex-col md:bg-White">
+      <div className="animate__animated animate__fadeInRight p-8 h-full flex flex-col justify-between md:w-1/4 md:h-fit md:p-8 md:rounded-3xl md:flex md:flex-col md:bg-White">
         <div className="mt-20 md:mt-0">
           <div>
             <img src={iconSuccess} alt="" />
